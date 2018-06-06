@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "npm run build",
+    "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -23,8 +25,10 @@
     "@vue/test-utils": "^1.0.0-beta.16",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^22.4.3",
+    "express": "^4.16.3",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "serve-static": "^1.13.2",
     "vue-template-compiler": "^2.5.16"
   },
   "browserslist": [
